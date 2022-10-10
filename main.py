@@ -1,9 +1,8 @@
 import streamlit as st
 
-st.header('st.selectbox')
+st.header('st.button')
 
-option = st.selectbox(
-     'What is your favorite color?',
-     ('Blue', 'Red', 'Green'))
-
-st.write('Your favorite color is ', option)
+if st.button('Say hello'):
+     st.write('Why hello there')
+else:
+     st.write('Goodbye')
